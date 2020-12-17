@@ -1,44 +1,35 @@
+# int (podem ser positvos e negativos)
+# float (podem ser positvos e negativos)
+# não necessita de ser declarados entre aspas ou duplas, não se usa ponto (.) ou virgula (,) para separar milhar.
+
+
 print(4)
 print(type(4))
-
-
-print('-------------------------')
 
 print(15.50)
 print(type(15.50))
 
-print("", end='\n\n')
+# Função int() - converte um dado para um número inteiro.
+diametro_planeta = 11582.70
 
-print('====================================================')
-print('Numeros apartir das funções INT e FLOAT')
-print('====================================================', end='\n\n')
+print('O diâmetro do planeta é : ', diametro_planeta, type(diametro_planeta))
+print('O diâmetro do planeta é: ', int(diametro_planeta), type(int(diametro_planeta)))
 
-preco_ingrediente = 14.70
+# Função float() - converte um dado para um número float.
+periodo_rotacao=34
 
-print('Preço do ingrediente float: ', preco_ingrediente, type(preco_ingrediente))
-print('Preço do ingrediente float: ', int(preco_ingrediente), type(int(preco_ingrediente))) # Concatenação
+print('O periodo de rotação é:  ', periodo_rotacao, type(periodo_rotacao))
+print('O periodo de rotação é: ', float(periodo_rotacao), type(float(periodo_rotacao)))
 
-print("", end='\n\n')
+populacao = '10_000'
 
-total_stock=34
+print('populacao: ', populacao, type(populacao))
+print('populacao int: ', int(populacao),type(int(populacao)))
+print('populacao float: ', float(populacao),type(float(populacao)))
 
-print('Total stock int: ', total_stock, type(total_stock))
-print('Total stock float: ', float(total_stock), type(float(total_stock)))
-
-print("", end='\n\n')
-
-faturamento = '10_000'
-
-print('Faturamento: ', faturamento, type(faturamento))
-print('Faturamento int: ', int(faturamento),type(int(faturamento)))
-print('Faturamento float: ', float(faturamento),type(float(faturamento)))
-
-
-print("", end='\n\n')
-
+# Caso a string tiver um ponto (.), tem que se primeiro converter para float e depois para int.
 imposto = '29.50'
 
 print('Imposto String', imposto, type(imposto))
 print('Imposto float', float(imposto), type(float(imposto)))
-print('Imposto int', int(float(imposto)), type(int(float(imposto))))  #### Tentar converter valor de String para INT nao vai funcionar, devido a ter um ponto (.). 
-                                                                      #### tem de ser de string para float e depois int.
+print('Imposto int', int(float(imposto)), type(int(float(imposto))))

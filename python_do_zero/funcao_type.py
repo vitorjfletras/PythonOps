@@ -1,34 +1,34 @@
+# A Função Type retorna o tipo de dado passado por parâmetro
 
-nome_estabelicimento= 'Pastelaria DevOps'
+planetas = 'Planetas do Star Wars'
 
-pastel1 = 'Carne'
-pastel2 = 'Queijo'
-pastel3 = 'Frango'
-pastel4 = 'Empada'
 
-status = True
+planeta1 = 'Tatooine'
+planeta2 = 'Alderaan'
+planeta3 = 'Yavin IV'
+planeta4 = 'Hoth'
 
-valor_pastel1 = 6.0
-valor_pastel2 = 5.20
-valor_pastel3 = 7
-valor_pastel4 = 7.5
+lua = True
 
-print(nome_estabelicimento)
-print(pastel1, valor_pastel1, status)
-print(pastel2, valor_pastel2, status)
-print(pastel3, valor_pastel3, status)
-print(pastel4, valor_pastel4, status)
+diametro_planeta1 = 10465
+diametro_planeta2 = 465.20
+diametro_planeta3 = 12445
+diametro_planeta4 = 11582.70
 
-print('---------------------------------------------------\n')
+print(planeta1, diametro_planeta1, lua)
+print(planeta2, diametro_planeta2, lua)
+print(planeta3, diametro_planeta3, lua)
+print(planeta4, diametro_planeta4, lua)
 
-print(status, type(status))
-print(pastel1, type(pastel1))
-print(pastel2, type(pastel2))
-print(pastel3, type(pastel3))
-print(pastel4, type(pastel4))
 
-print(valor_pastel1, type(valor_pastel1))
-print(valor_pastel2, type(valor_pastel2))
-print(valor_pastel3, type(valor_pastel3))
-print(valor_pastel4, type(valor_pastel4))
+print(lua, type(lua))
+print(planeta1, type(planeta1))
+print(planeta2, type(planeta2))
+print(planeta3, type(planeta3))
+print(planeta4, type(planeta4))
+
+print(diametro_planeta1, type(diametro_planeta1))
+print(diametro_planeta2, type(diametro_planeta2))
+print(diametro_planeta3, type(diametro_planeta3))
+print(diametro_planeta4, type(diametro_planeta4))
 

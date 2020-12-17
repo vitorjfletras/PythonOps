@@ -1,25 +1,25 @@
+# A função print() permite 'imprimir' o argumento passado. 
 
-nome_estabelicimento= 'Pastelaria DevOps'
+planetas = 'Planetas do Star Wars'
 
-pastel1 = 'Carne'
-pastel2 = 'Queijo'
-pastel3 = 'Frango'
-pastel4 = 'Empada'
 
-status = True
+planeta1 = 'Tatooine'
+planeta2 = 'Alderaan'
+planeta3 = 'Yavin IV'
+planeta4 = 'Hoth'
 
-valor_pastel1 = 6.0
-valor_pastel2 = 5.20
-valor_pastel3 = 7
-valor_pastel4 = 3.5
+lua = True
 
-# sdef print(*values: object, sep: Optional[Text]=..., end: Optional[Text]=..., file: Optional[_Writer]=..., flush: bool=...)
-#print(nome_estabelicimento, end='\n\n')
-print(nome_estabelicimento, end='\n==============================\n')
-print(pastel1, valor_pastel1, status, sep=' ==> ', end='\n\n')
-print(pastel2, valor_pastel2, status, sep=';', end='\n\n') # Simular a saida ponto e virgula (utilizado por csv)
+diametro_planeta1 = 10465
+diametro_planeta2 = 465.20
+diametro_planeta3 = 12445
+diametro_planeta4 = 11582.70
 
-# Sem utilizacao de END e SEP
-print(pastel2, '\n', valor_pastel2, '\n', status)
-print(pastel3, valor_pastel3, status, sep='\n',end='\n\n')
-print(pastel4, valor_pastel4, status,sep='\n',end='\n\n')
+
+print(planetas, end='\n==============================\n')
+print(planeta1, diametro_planeta1, lua, sep=' ==> ', end='\n\n')
+print(planeta2, diametro_planeta2, lua, sep=';', end='\n\n') # Output ponto e virgula (utilizado por csv)
+
+print(planeta2, '\n', diametro_planeta2, '\n', lua)
+print(planeta3, diametro_planeta3, lua, sep='\n',end='\n\n')
+print(planeta4, diametro_planeta4, lua,sep='\n',end='\n\n')

@@ -11,10 +11,10 @@ planeta4 = 'Hoth'
 
 lua = True
 
-diametro_planeta1 = 6.0
-diametro_planeta2 = 5.20
-diametro_planeta3 = 7
-diametro_planeta4 = 7
+diametro_planeta1 = 10465
+diametro_planeta2 = 465.20
+diametro_planeta3 = 12445
+diametro_planeta4 = 11582.70
 
 
 print(planetas)

@@ -1,8 +1,7 @@
-cardapio = ['Carne', 'Queijo', 'frango', 'Vegetais', 'Pizza', 'Tremocos', 'sapateira']
+# Estrutura de repetição FOR
+# Um loop for é usado para iterar sobre uma sequência pode ser uma lista, uma tupla, um dicionário, um conjunto ou uma string).
 
-print('Pastelaria DevOps')
-print('Veja o nosso cardapio')
-print('----------')
+planetas = ['Tatooine', 'Alderaan', 'Yavin IV', 'Hoth', 'Dagobah', 'Bespin', 'Endor']
 
-for recheio in cardapio:
-    print(f'O recheio do pastel é: {recheio}')
+for planeta in planetas:
+    print(f'O nome do planeta é: {planeta}')

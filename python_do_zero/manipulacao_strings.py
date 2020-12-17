@@ -1,32 +1,36 @@
+#    • Concatenação
+#        ◦ Somente entre strings
+#    • Interpolação
+#        ◦ Marcadores (%d, %f, %s)
+#            ▪ %d – Inteiro
+#            ▪ %f – Float
+#            ▪ %s – String
+#    • Método format
+#        ◦ print(‘Meu nome é {}’:format(nome))
+#            ▪ Método f-string (Python 3.6)
 
-nome_estabelicimento= 'Pastelaria DevOps'
+planetas = 'Planetas do Star Wars'
 
-pastel1 = 'Carne'
-pastel2 = 'Queijo'
-pastel3 = 'Frango'
-pastel4 = 'Empada'
 
-status = True
+planeta1 = 'Tatooine'
+planeta2 = 'Alderaan'
+planeta3 = 'Yavin IV'
+planeta4 = 'Hoth'
 
-valor_pastel1 = 6.0
-valor_pastel2 = 5.20
-valor_pastel3 = 7
-valor_pastel4 = 7
+lua = True
 
-# print(nome_estabelicimento)
-'''
-print(pastel1, valor_pastel1, status)
-print(pastel2, valor_pastel2, status)
-print(pastel3, valor_pastel3, status)
-print(pastel4, valor_pastel4, status)
-'''
+diametro_planeta1 = 10465.25
+diametro_planeta2 = 465
+diametro_planeta3 = 12445
+diametro_planeta4 = 11582.70
+
 
 print('')
 print('## Concatenação ##')
 print('')
-mensagem = 'O nome do estabelecimento é ' + nome_estabelicimento 
+mensagem = 'O nome do Planeta é ' + planeta1 
 print(mensagem)
-mensagem2 = 'O pastel de ' + pastel1 + ' custa ' + str(valor_pastel1) + ' euros'
+mensagem2 = 'O Planeta ' + planeta1 + ' tem o diâmetro de ' + str(diametro_planeta1) + ' kms'
 print(mensagem2)
 
 
@@ -34,35 +38,35 @@ print('')
 print('## Interpolação ##')
 print('')
 
-print('O nome do estabelecimento é %s' %nome_estabelicimento)
-print('O pastel de %s custa %s euros ' %(pastel1, valor_pastel1))
-print('O pastel de %s custa %f euros ' %(pastel1, valor_pastel1))
-print('O pastel de %s custa %.2f euros ' %(pastel1, valor_pastel1)) ## %.sf duas casas decimais
-print('O pastel de %s custa %d euros ' %(pastel3, valor_pastel3))
-print('O pastel de %s custa %d euros ' %(pastel1, valor_pastel1)) ## Apresenta só o numero inteiro
-print('O pastel de %s custa %.3d euros ' %(pastel1, valor_pastel1)) ## Acrescenta o inteiro para 3 digitos, se fosse 600 output é 600.
+print('O tema é %s' %planetas)
+print('O planeta %s tem %s kms de diâmetro ' %(planeta1, diametro_planeta1))
+print('O planeta %s tem %f kms de diâmetro ' %(planeta1, diametro_planeta1))
+print('O planeta %s tem %.2f kms de diâmetro ' %(planeta1, diametro_planeta1)) ## %.2f duas casas decimais
+print('O planeta %s tem %d kms de diâmetro ' %(planeta3, diametro_planeta3))
+print('O planeta %s tem %d kms de diâmetro ' %(planeta1, diametro_planeta1)) ## Apresenta só o numero inteiro
+print('O planeta %s tem %.5d kms de diâmetro ' %(planeta1, diametro_planeta1))
 
 
 print('')
 print('## Método Format ##')
 print('')
 
-print('O nome do estabelecimento é {}'.format(nome_estabelicimento))
-print('O pastel de {} custa {} euros '.format(pastel1, valor_pastel1))
-print('O pastel de {} custa {:f} euros '.format(pastel1, valor_pastel1))
-print('O pastel de {} custa {:.2f} euros '.format(pastel1, valor_pastel1)) ## %.sf duas casas decimais
-print('O pastel de {} custa {:.3f} euros '.format(pastel3, valor_pastel3))
-print('O pastel de {} custa {} euros '.format(pastel1, valor_pastel1)) ## Apresenta só o numero inteiro
-print('O pastel de {} custa {:03} euros '.format(pastel3, valor_pastel3)) ## Acrescenta o inteiro para 3 digitos, se fosse 600 output é 600.
+print('O tema é %s' %planetas)
+print('O planeta {} tem {} kms de diâmetro '.format(planeta1, diametro_planeta1))
+print('O planeta {} tem {:f} kms de diâmetro '.format(planeta1, diametro_planeta1))
+print('O planeta {} tem {:.2f} kms de diâmetro '.format(planeta1, diametro_planeta1))
+print('O planeta {} tem {:.3f} kms de diâmetro '.format(planeta3, diametro_planeta3))
+print('O planeta {} tem {} kms de diâmetro '.format(planeta1, diametro_planeta1))
+print('O planeta {} tem {:03} kms de diâmetro '.format(planeta3, diametro_planeta3))
 
 print('')
 print('## Método f-string ##')
 print('')
 
-print(f'O nome do estabelecimento é {nome_estabelicimento}')
-print(f'O pastel de {pastel1} custa {valor_pastel1} euros')
-print(f'O pastel de {pastel1} custa {valor_pastel1:f} euros')
-print(f'O pastel de {pastel1} custa {valor_pastel1:.2f} euros')
-print(f'O pastel de {pastel3} custa {valor_pastel3:.3f} euros')
-print(f'O pastel de {pastel1} custa {valor_pastel1} euros')
-print(f'O pastel de {pastel3} custa {valor_pastel3:03} euros')
+print('O tema é %s' %planetas)
+print(f'O planeta {planeta1} tem {diametro_planeta1} kms de diâmetro')
+print(f'O planeta {planeta1} tem {diametro_planeta1:f} kms de diâmetro')
+print(f'O planeta {planeta1} tem {diametro_planeta1:.2f} kms de diâmetro')
+print(f'O planeta {planeta3} tem {diametro_planeta3:.3f} kms de diâmetro')
+print(f'O planeta {planeta1} tem {diametro_planeta1} kms de diâmetro')
+print(f'O planeta {planeta3} tem {diametro_planeta3:03} kms de diâmetro')

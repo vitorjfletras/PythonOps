@@ -1,20 +1,23 @@
-minha_tupla = ()
-print(type(minha_tupla))
+# Tuplas similar a uma Lista mas é imutável.
 
-pastel1 = ('Queijo',6.00, True)
-print(pastel1)
-print(pastel1[0])
-print(pastel1[1])
-print(pastel1[2])
+tupla = ()
+print(type(tupla))
 
-print(pastel1[-1])
+
+planeta = ('Tatooine', 10465, True)
+print(planeta)
+print(planeta[0])
+print(planeta[1])
+print(planeta[2])
+print(planeta[-1]) # último elemento
+
+for plt in planeta:
+    print(plt)
 
 print('------')
-for info in pastel1:
-    print(info)
 
-print('------')
-sabor, valor, status = pastel1
-print(sabor)
-print(valor)
-print(status)
+# atribuição a uma tupla
+nome, diametro, lua = planeta
+print(nome)
+print(diametro)
+print(lua)

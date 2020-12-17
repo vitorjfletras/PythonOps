@@ -1,61 +1,57 @@
-cadapio ={}
+# Dicionários - é um tipo de mapeamento nativo do Python.
+# Um mapeamento é uma coleção de associações entre pares de valores
+# O primeiro elemento do par é chamado de chave(imutável) e o outro de conteúdo
 
-print(type(cadapio))
+planetas ={}
 
-pasltel1 = {'Sabor': 'Frango', 'valor': '4', 'stock': True}
+print(type(planetas))
 
-print(pasltel1['Sabor'])
-print(pasltel1['valor'])
-print(pasltel1['stock'])
+planeta = {'Nome': 'Tatooine', 'diametro_planeta': '10465.25', 'Lua': True}
 
-# atulizar a cahve Valor para 7
-pasltel1['valor'] = 7.00
+print(planeta['Nome'])
+print(planeta['diametro_planeta'])
+print(planeta['Lua'])
 
-print(pasltel1)
+# Atulizar o valor da chave diametro_planeta para 777.
+planeta['diametro_planeta'] = 777
+print(planeta)
 
-print(pasltel1.get('quantidade'))
+print(planeta.get('Clima')) # Vai retornar None
 
-if pasltel1.get('quantidade'):
-    print(pasltel1.get('quantidade'))
+# Senão existir a chave Clima, vai criar com o valor 'tropical'
+if planeta.get('Clima'):
+    print(planeta.get('Clima'))
 else:
-    pasltel1['quantidade'] = 10
+    planeta['Clima'] = 'tropical'
 
-print(pasltel1)
+print(planeta)
 
-# Retornar em lista
+# Retornar as chaves
+chaves = planeta.keys()
+print(chaves)
 
-## Retornar as chaves
-
-keys = pasltel1.keys()
-print(keys)
-
-for key in keys:
-    if key == 'stock':
-        print(f'A chave: {key} foi encontrado no dicionario')
+for chave in chaves:
+    if chave == 'Lua':
+        print(f'A chave: {chave} foi encontrado no dicionario')
     else:
         print('Nao encontrado')
 
 
-## Retornar os valores
-
-valores = pasltel1.values()
+# Retornar os valores
+valores = planeta.values()
 print(valores)
 
 for valor in valores:
     print(f'O elemento {valor} está no dicionario')
 
-## Retornar chave e valor
+# Retornar chave e valor
+composicao = planeta.items()
+print(composicao)
 
-
-dict_values = pasltel1.items()
-print(dict_values)
-
-for key, value in dict_values:
-    print(f'A chave é: {key} e o valor é {value}')
+for chave, valor in composicao:
+    print(f'A chave é: {chave} e o valor é {valor}')
     
-
-## Remover elemnto do dicionario
-
-print(pasltel1)
-pasltel1.pop('quantidade')
-print(pasltel1)
+# Remover elemnto do dicionario
+print(planeta)
+planeta.pop('Clima')
+print(planeta)
