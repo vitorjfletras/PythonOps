@@ -1,3 +1,3 @@
 # PythonDevOps
 
-Scripts desenvolvidos para aprender Ptyhon
+Scripts desenvolvidos para melhorar desenvolvimento em Ptyhon
